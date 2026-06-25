@@ -39,10 +39,13 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
     
 ALLOWED_HOSTS = [
+    "cruddemo-nm6s.onrender.com",
     "localhost",
     "127.0.0.1",
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://cruddemo-nm6s.onrender.com",
+]
 # Application definition
 
 INSTALLED_APPS = [
